@@ -102,15 +102,15 @@ button {
   border-radius: 10px;
 }
 
-.mine {
+p.mine {
   font-style: none;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 3%;
+  text-align: justify;
+  font-size: 12px;
+  padding-left: 15%;
+  margin-top: 0;
   margin-bottom: 0;
   font-family: "Courier New", Courier, monospace;
-  opacity: 0.7;
-  color: #c0bebe;
+  color: #161616;
 }
 a:link {
   color: #ffd980;
@@ -119,10 +119,6 @@ a:link {
 a:visited {
   color: #b9e1f8;
 }
-.myName {
-  color: #fdc57b;
-  text-decoration: none;
-}
-.myName:hover {
-  color: rgb(25, 255, 255);
+a:hover {
+  text-decoration: underline;
 }
