@@ -110,7 +110,7 @@ p.mine {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Courier New", Courier, monospace;
-  color: #161616;
+  color: #1b1b1b;
 }
 a:link {
   color: #ffd980;
@@ -121,4 +121,5 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+  color: rgb(7, 7, 216);
 }
