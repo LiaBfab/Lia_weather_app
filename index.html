@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>LiaBfab Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="city-form">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-5">
+              <input
+                type="search"
+                placeholder="Type a city name.."
+                autofocus="on"
+                autocomplete="off"
+                id="search-engine"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </form>
+        <br />
+        <h1><span id="city-name"></span>, <span id="country"></span></h1>
+        <ul>
+          <li id="current-date"></li>
+          <li id="describe"></li>
+        </ul>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="tempInfo">
+                <span class="temperature" id="temp-no">19</span
+                ><span class="units"
+                  ><a href="#" id="link-celsius">°C </a> |
+                  <a href="#" id="link-fahrenheit">°F</a></span
+                >
+                <img src="images/weatherIcon4a.png" alt="Weather Icon" />
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-light" id="location-button">
+              Current Location
+            </button>
+            <ul class="locateMe">
+              <li>Humidity: <span id="humidity">77</span>%</li>
+              <li>Wind: <span id="wind">8</span>km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="thirdrow">
+          <div class="row">
+            <div class="col">
+              <div class="subdays">
+                Mon / 15
+                <br />
+                ⛅️
+                <br />
+                89°/77°
+                <br />
+                Partly cloudy
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="subdays">
+                Tues / 16
+                <br />
+                ⛈
+                <br />
+                90°/76°
+                <br />
+                Light rain
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="subdays">
+                Wed / 17
+                <br />
+                ⛅️
+                <br />
+                90°/76°
+                <br />
+                Partly cloudy
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="subdays">
+                Thur / 18
+                <br />
+                ⛈
+                <br />
+                90°/76°
+                <br />
+                Light rain
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="subdays">
+                Fri / 19
+                <br />
+                ⛈
+                <br />
+                90°/76°
+                <br />
+                Heavy rain
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="mine">
+              This weather page was built by
+              <a
+                href="https://www.linkedin.com/in/ijeoma-anya-48931bb5"
+                target="_blank"
+                class="myName"
+                >Anya, Ijeoma L. © 2023</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
