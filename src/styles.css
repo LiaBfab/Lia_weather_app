@@ -36,6 +36,8 @@ button {
   margin-right: 30px;
 }
 .weather-app {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/377/original/clouds.jpg?1687206238");
+  background-size: cover;
   border: 1px solid #dadde1;
   padding: 15px;
   max-width: 800px;
@@ -46,13 +48,6 @@ button {
   padding-top: 4%;
   padding-left: 4%;
   padding-right: 2%;
-  background: linear-gradient(
-    90.4deg,
-    rgb(244, 199, 62) -3.8%,
-    rgb(244, 62, 62) 46.8%,
-    rgb(245, 61, 195) 98.8%
-  );
-
   color: #fff;
 }
 .upper {
@@ -125,5 +120,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #eebc48;
+  color: rgb(5, 125, 223);
+  color: #fbc606;
 }
