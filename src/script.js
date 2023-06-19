@@ -1,9 +1,10 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
+  let minutes = date.getMinutes();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -24,17 +25,28 @@ function formatDate(date) {
 }
 
 function showWeather(response) {
-  document.querySelector(`#city-name`).innerHTML = response.data.name;
-  document.querySelector(`#country`).innerHTML = response.data.sys.country;
-  document.querySelector(`#temp-no`).innerHTML = Math.round(
-    response.data.main.temp
+  let cityName = document.querySelector(`#city-name`);
+  let country = document.querySelector(`#country`);
+  let humidity = document.querySelector(`#humidity`);
+  let wind = document.querySelector(`#wind`);
+  let description = document.querySelector(`#description`);
+  let temperature = document.querySelector(`#temp-no`);
+  let currentDate = document.querySelector("#current-date");
+  let mainIcon = document.querySelector(`#main-icon`);
+
+  cityName.innerHTML = response.data.name;
+  country.innerHTML = response.data.sys.country;
+  cTemperature = response.data.main.temp;
+  temperature.innerHTML = Math.round(cTemperature);
+  humidity.innerHTML = response.data.main.humidity;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  description.innerHTML = response.data.weather[0].description;
+  currentDate.innerHTML = formatDate(response.data.dt * 1000);
+  mainIcon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  document.querySelector(`#humidity`).innerHTML = response.data.main.humidity;
-  document.querySelector(`#wind`).innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector(`#describe`).innerHTML =
-    response.data.weather[0].description;
+  mainIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 function showCity(city) {
@@ -65,22 +77,31 @@ function getCurrentLocation(event) {
 
 function fLink(event) {
   event.preventDefault();
-  let tempFigure = document.querySelector("#temp-no");
-  tempFigure.innerHTML = 69;
+  linkCelsius.classList.remove(`active`);
+  linkFahreheit.classList.add(`active`);
+  let fTemperature = (cTemperature * 9) / 5 + 32;
+  let temperature = document.querySelector(`#temp-no`);
+  temperature.innerHTML = Math.round(fTemperature);
 }
 
 function cLink(event) {
   event.preventDefault();
-  let tempFigure = document.querySelector("#temp-no");
-  tempFigure.innerHTML = 19;
+  linkCelsius.classList.add(`active`);
+  linkFahreheit.classList.remove(`active`);
+  let temperature = document.querySelector("#temp-no");
+  temperature.innerHTML = Math.round(cTemperature);
 }
-
-let dateElement = document.querySelector("#current-date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
 
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", handleSubmit);
+
+let cTemperature = null;
+
+let linkFahreheit = document.querySelector("#link-fahrenheit");
+linkFahreheit.addEventListener(`click`, fLink);
+
+let linkCelsius = document.querySelector("#link-celsius");
+linkCelsius.addEventListener(`click`, cLink);
 
 let currentLocationButton = document.querySelector("#location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
