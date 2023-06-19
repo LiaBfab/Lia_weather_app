@@ -116,10 +116,10 @@ p.mine {
   color: #201d1d;
 }
 a {
+  color: #fbc606;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
   color: rgb(5, 125, 223);
-  color: #fbc606;
 }
