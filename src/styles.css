@@ -19,7 +19,7 @@ ul {
 li {
   color: #e7eff5;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   height: 19px;
   line-height: 1;
   list-style: none;
@@ -39,15 +39,14 @@ li #feels,
 
 button {
   margin-bottom: 2%;
-  margin-right: 5%;
-  font-weight: 800;
+  margin-right: 10%;
 }
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/833/original/cloudsky.jpg?1687554876");
   background-size: cover;
   border: 1px solid transparent;
   padding: 15px;
-  max-width: 700px;
+  max-width: 750px;
   margin: 20px auto;
   margin-top: 3%;
   margin-bottom: 0;
@@ -73,7 +72,7 @@ button {
   position: absolute;
   height: 150px;
   width: 150px;
-  margin-left: 50px;
+  margin-left: 15%;
   flex: 1;
 }
 
