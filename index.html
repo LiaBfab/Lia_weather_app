@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Bfab Weather App</title>
+    <title>B-fabulous Weather App</title>
   </head>
   <body>
     <div class="container">
@@ -57,8 +57,8 @@
                 <strong id="temp-no"></strong>
                 <span class="units"
                   ><a href="#" id="link-celsius" class="active">°C </a> |
-                  <a href="#" id="link-fahrenheit">°F</a></span
-                >
+                  <a href="#" id="link-fahrenheit">°F</a>
+                </span>
               </div>
             </div>
           </div>
@@ -67,73 +67,23 @@
               My Location
             </button>
             <ul class="locateMe">
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
+              <li>
+                Feels like <span id="feels"></span
+                ><span class="measures">°</span>
+              </li>
+              <li>
+                Humidity: <span id="humidity"></span
+                ><span class="measures">%</span>
+              </li>
+              <li>
+                Wind: &nbsp; &nbsp; &nbsp; <span id="wind"></span
+                ><span class="measures">km/h</span>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="thirdrow">
-          <div class="row">
-            <div class="col">
-              <section class="subdays">
-                Mon / 15
-                <br />
-                ⛅️
-                <br />
-                89°/77°
-                <br />
-                Partly cloudy
-              </section>
-            </div>
-
-            <div class="col">
-              <section class="subdays">
-                Tues / 16
-                <br />
-                ⛅️
-                <br />
-                90°/76°
-                <br />
-                Light rain
-              </section>
-            </div>
-
-            <div class="col">
-              <section class="subdays">
-                Wed / 17
-                <br />
-                ⛅️
-                <br />
-                90°/76°
-                <br />
-                Partly cloudy
-              </section>
-            </div>
-
-            <div class="col">
-              <section class="subdays">
-                Thur / 18
-                <br />
-                ⛅️
-                <br />
-                90°/76°
-                <br />
-                Light rain
-              </section>
-            </div>
-
-            <div class="col">
-              <section class="subdays">
-                Fri / 19
-                <br />
-                ⛅️
-                <br />
-                90°/76°
-                <br />
-                Heavy rain
-              </section>
-            </div>
-          </div>
+        <div class="forecastRow">
+          <div class="forecasting" id="forecasting"></div>
         </div>
       </div>
       <p class="mine">
@@ -142,9 +92,9 @@
           href="https://www.linkedin.com/in/ijeoma-anya-48931bb5"
           target="_blank"
           class="myName"
-          >Anya, Ijeoma L. © 2023,</a
+          >Anya, Ijeoma L. © 2023</a
         >
-        open-sourced on
+        and is open-sourced on
         <a href="https://github.com/LiaBfab/Lia_weather_app" target="_blank"
           >Github</a
         >
