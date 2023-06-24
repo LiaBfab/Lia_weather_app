@@ -46,7 +46,7 @@ button {
   background-size: cover;
   border: 1px solid transparent;
   padding: 15px;
-  max-width: 750px;
+  max-width: 700px;
   margin: 20px auto;
   margin-top: 3%;
   margin-bottom: 0;
@@ -57,6 +57,7 @@ button {
   padding: 4% 2% 0 4%;
   color: #fff;
 }
+
 .upper {
   margin-bottom: 5%;
 }
@@ -65,13 +66,14 @@ button {
   font-size: 15px;
 }
 .phaseDetails {
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  max-width: 95%;
 }
 
 .tempInfo img {
   position: absolute;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   margin-left: 15%;
   flex: 1;
 }
@@ -104,28 +106,19 @@ button {
   color: rgb(245, 236, 188);
 }
 
-.row > div #forecasting {
-  background: rgb(0, 76, 190);
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
 .forecastRow {
   display: block;
-  position: relative;
   font-size: 14px;
   text-align: center;
-  margin: 20 auto;
-  margin-left: 3%;
-  margin-bottom: 0;
-  width: 90%;
-  margin-top: 9%;
+  margin: 9% 5% 0 5%;
+  max-width: 95%;
   border-radius: 10px solid transparent;
   background-color: rgba(32, 87, 155, 0.1);
 }
 .forecasting {
-  display: block;
   padding: 2px;
   margin: 20px auto;
+  width: 95%;
 }
 .forecastDays {
   font-size: 15px;
