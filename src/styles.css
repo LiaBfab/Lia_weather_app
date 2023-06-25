@@ -73,13 +73,13 @@ button {
   position: absolute;
   height: 120px;
   width: 120px;
-  margin-left: 15%;
+  margin-left: 18%;
   flex: 1;
 }
 
 .tempInfo strong {
   color: rgb(253, 241, 169);
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 400;
   line-height: 1;
 }
@@ -115,8 +115,7 @@ button {
 }
 .forecasting {
   padding: 2px;
-  margin: 20px auto;
-  width: 98%;
+  margin: 10px auto;
 }
 .forecastDays {
   font-size: 15px;

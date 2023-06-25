@@ -39,11 +39,11 @@ function showForecast(response) {
 
   let forecastingHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 7) {
+    if (index < 6) {
       forecastingHTML =
         forecastingHTML +
         `
-      <div class="col">
+      <div class="col-2">
       <div class="forecastDays"> ${formatDay(forecastDay.time)}</div>
       <img src="${forecastDay.condition.icon_url}" alt="" width="42" />
       <div class="forecastTemp">
