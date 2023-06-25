@@ -63,9 +63,10 @@ button {
 .phaseDetails {
   margin-bottom: 12%;
   padding-left: 10%;
+  max-width: 98%;
 }
 .buttonwrap {
-  margin-left: 30%;
+  padding-left: 25%;
   margin-top: 10%;
 }
 
