@@ -67,7 +67,6 @@ button {
 }
 .phaseDetails {
   margin-bottom: 15%;
-  max-width: 95%;
 }
 
 .tempInfo img {
@@ -111,14 +110,13 @@ button {
   font-size: 14px;
   text-align: center;
   margin: 9% 5% 0 5%;
-  max-width: 95%;
   border-radius: 10px solid transparent;
   background-color: rgba(32, 87, 155, 0.1);
 }
 .forecasting {
   padding: 2px;
   margin: 20px auto;
-  width: 95%;
+  width: 98%;
 }
 .forecastDays {
   font-size: 15px;
