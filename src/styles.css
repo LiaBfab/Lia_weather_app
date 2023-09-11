@@ -145,11 +145,10 @@ p.mine {
 }
 a {
   text-decoration: none;
-  opacity: 0.5;
-  color: #c82333;
+
+  color: #1683d2;
 }
 a:hover {
   text-decoration: underline;
-  color: #5a6268;
-  opacity: 0.9;
+  color: #153750;
 }
