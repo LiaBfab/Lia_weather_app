@@ -41,7 +41,7 @@ li #feels,
 button {
   margin-bottom: 2%;
 }
-/* background-image:url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/833/original/cloudsky.jpg?1687554876"); */
+
 .weather-app {
   background: #fff;
   background-size: cover;
@@ -63,7 +63,7 @@ button {
   font-size: 15px;
 }
 .phaseDetails {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   padding-left: 7%;
 }
 .buttonwrap {
@@ -80,9 +80,9 @@ button {
 }
 
 .tempInfo strong {
-  color: #2e3133;
-  font-size: 80px;
-  font-weight: 500;
+  color: #656565;
+  font-size: 70px;
+  font-weight: 400;
   line-height: 1;
 }
 .tempInfo {
