@@ -83,7 +83,7 @@ button {
   color: #656565;
   font-size: 70px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.9;
 }
 .tempInfo {
   margin-left: 35%;
@@ -101,6 +101,12 @@ button {
 
 .tempInfo .active:hover {
   text-decoration: none;
+}
+.measure {
+  position: relative;
+  top: -35px;
+  right: 5px;
+  font-size: 22px;
 }
 .measures {
   color: #c82333;
