@@ -43,7 +43,7 @@ button {
 }
 
 .weather-app {
-  background: #fff;
+  background: #f7f5f5;
   background-size: cover;
   border: 1px solid transparent;
   max-width: 700px;
@@ -56,14 +56,14 @@ button {
 }
 
 .upper {
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 
 .upper li {
   font-size: 15px;
 }
 .phaseDetails {
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   padding-left: 7%;
 }
 .buttonwrap {
@@ -73,9 +73,9 @@ button {
 
 .tempInfo img {
   position: absolute;
-  height: 130px;
-  width: 130px;
-  margin-left: 18%;
+  height: 150px;
+  width: 150px;
+  margin-left: 10%;
   flex: 1;
 }
 
@@ -87,7 +87,8 @@ button {
 }
 .tempInfo {
   margin-left: 35%;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
+  margin-top: 2%;
 }
 .units {
   position: relative;
@@ -104,9 +105,9 @@ button {
 }
 .measure {
   position: relative;
-  top: -35px;
-  right: 5px;
-  font-size: 22px;
+  top: -34px;
+  right: -2px;
+  font-size: 25px;
 }
 .measures {
   color: #c82333;
@@ -152,9 +153,14 @@ p.mine {
 a {
   text-decoration: none;
 
-  color: #1683d2;
+  color: #790321;
 }
 a:hover {
   text-decoration: underline;
   color: #153750;
+}
+@media (max-width: 920px) {
+  .container {
+    margin-bottom: -50%;
+  }
 }
